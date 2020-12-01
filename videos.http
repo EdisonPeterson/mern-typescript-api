@@ -1,0 +1,27 @@
+@api = http://localhost:4000
+### GET VIDEOS
+GET {{api}}/videos
+
+### GET A VIDEO
+GET {{api}}/videos/5f9238fba5d57c2918becffb
+
+### CREATE A VIDEO
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=NVvZNmfqg6M",
+    "title": "fazt docker curso",
+    "description": "this is a fazt video"
+}
+
+### DELETE A VIDEO
+DELETE {{api}}/videos/5f9238fba5d57c2918becffb
+
+### UPDATE A VIDEO
+PUT {{api}}/videos/5f923a7dfeba4d089017cb2d
+Content-Type: application/json
+
+{
+    "description": "Este es un video de Docker"
+}
